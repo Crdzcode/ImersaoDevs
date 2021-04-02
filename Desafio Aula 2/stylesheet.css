@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background-color: #222222;
+    
+}
+
+.container {
+    background-image: url('2789327.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    min-height: 93.5%;
+}
+
+.content {
+    margin: auto;
+    padding: 5px;
+    width: fit-content;
+    background-color: #252525;
+    border-radius: 20px;
+}
+
+.margin{
+    margin-top: 20px;
+}
+
+.pokemon{
+    max-width: 20%;
+    min-width: 20%;
+    margin-top: 20px;
+}
+
+.bulbasaurbutton{
+    max-width: 50%;
+    min-width: 50%;
+    margin-top: 20px;
+}
+
+.correct{
+    background-color: rgb(21, 197, 115);
+    color: #222222;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+.wrong{
+    background-color: rgb(214, 65, 65);
+    color: #222222;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: 0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+button.charmander{
+    background-color: darkorange;
+}
+
+button.bulbasaur{
+    background-color: rgb(21, 197, 115);
+}
+
+button.squirtle{
+    background-color: rgb(49, 202, 253);
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}

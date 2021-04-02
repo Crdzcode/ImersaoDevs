@@ -1,0 +1,175 @@
+body { /* Estilo padrão da página, definição do background e animação de degradê */
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(225deg, #00ffa7, #a300ff, #94002c, #e3ff00);
+    background-size: 500% 500%;
+
+    -webkit-animation: colors 29s ease infinite;
+    -moz-animation: colors 29s ease infinite;
+    animation: colors 29s ease infinite;
+}
+
+.container { /* Classe para armazenar o conteúdo da página */
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.page-title { /* Estilo do texto do cabeçalho da página, com a animação de degradê */
+    font-family: 'Staatliches';
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(225deg, #00ffa7, #a300ff, #94002c, #e3ff00);
+    background-size: 500% 500%;
+
+    -webkit-animation: colors 29s ease infinite;
+    -moz-animation: colors 29s ease infinite;
+    animation: colors 29s ease infinite;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+    font-size: 60px;
+    letter-spacing: 8px;
+    border: #222222;
+    margin: 3px;
+}
+
+.cards-title{ /* Estilo do texto do cabeçalho da seção das cartas */
+    font-family: 'Josefin Sans';
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.cards-subtitle{ /* Estilo do subtexto do cabeçalho da seção das cartas */
+    font-family: 'Josefin Sans';
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    color: #000;
+    font-size: 15px;
+}
+
+.content { /* Estilização da seção que armazenará as cartas */
+    position: relative;
+    margin: auto;
+    padding: 5px;
+    width: 94.1%;
+    z-index: 1;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.title-back { /* Estilização da caixa que armazenará o cabeçalho "MENTALISTA" */
+    position: relative;
+    margin: auto;
+    background-color: #181818;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.5);
+    width: 95%;
+}
+
+.margin{ /* Classe geral para afastamento de elementos */
+    margin-top: 20px;
+}
+
+button{ /* Estabelecer animação de opacidade para todos os botões (cartas) */
+    -webkit-transition: opacity 0.7s ease-in-out;
+    -moz-transition: opacity 0.7s ease-in-out;
+    -ms-transition: opacity 0.7s ease-in-out;
+    -o-transition: opacity 0.7s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
+    opacity: 1;
+}
+
+button:hover{ /* Redução da opacidade do botão quando o usuário passa o mouse em cima dele */
+    opacity: 0.8;
+}
+
+.card{ /* Estilização do botão para ficar parecido com uma carta */
+    height: 30%;
+    width: 10%;
+    background-color: rgb(22, 22, 22);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.6);
+    margin: 5px;
+}
+
+.wrongCard{ /* Estilização do botão quando o botão é a carta errada */
+    height: 30%;
+    width: 10%;
+    background-color: rgba(22, 22, 22, 0.8);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.6);
+    margin: 5px;
+}
+
+.goldenCard{ /* Estilização do botão quando o botão é a carta dourada */
+    height: 30%;
+    width: 10%;
+    background-color: goldenrod;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.6);
+    margin: 5px;
+}
+
+.tryAgain{ /* Estilização do botão de tentar novamente */
+    font-family: 'Josefin Sans';
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    color: #000;
+    font-size: 25px;
+    font-weight: 800;
+    height: 10%;
+    width: 30%;
+    border: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.6);
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.page-logo { /* Estilização da logo do Imersão Devs */
+    margin: 2px;
+    width: 100px;
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+}
+
+.alura-logo { /* Estilização da logo da Alura */
+    width: 40px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: auto;
+}
+
+@-webkit-keyframes colors {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes colors {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes colors {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}

@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+        Imersão Dev - Aula 01
+    </title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        function converter(){
+            var numero = parseFloat(document.getElementById("entrada").value);
+            var f = (numero*9/5) + 32;
+            document.getElementById('retorno').innerHTML = numero + " graus Celsius equivalem a " + f + " graus Fahrenheit.";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="page-title">
+            Conversor de temperaturas
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+            class="page-logo" alt="">
+        <br>
+        <br>
+        <div class="outline">
+            <h1 style="text-align: center;">Conversão de graus Celsius para Fahrenheit</h1>
+            <h3 style="text-align: center;">Insira um valor em graus Celsius</h3>
+            <input type="number" id="entrada" name="entrada" step=".01">
+            <button class="botao" onclick="converter()">Converter</button>
+            <br>
+            <p id="retorno"></p>
+        </div>
+    </div>
+
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+
+
+</body>
+
+</html>

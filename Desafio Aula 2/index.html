@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>
+        Imersão Dev - Aula 02
+    </title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body onload="selecionarPokemon()">
+
+    <div class="container">
+        <div class="content">
+            <h1 class="page-title">
+                Quem é esse pokémon?
+            </h1>
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+                class="page-logo" alt="">
+        </div>
+        <div id="pokemon" class="content margin" style="border-radius: 0; background-color: transparent;"></div>
+        <div id="botoes" class="content margin" style="border-radius: 0; background-color: transparent;">
+            <button class="charmander" value=1 onclick="verificarPokemon(this.value)">Charmander</button>
+            <button class="bulbasaur" value=0 onclick="verificarPokemon(this.value)">Bulbassauro</button>
+            <button class="squirtle" value=2 onclick="verificarPokemon(this.value)">Squirtle</button>
+        </div>
+        <div id="retorno" class="margin"></div>
+    </div>
+
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+
+
+</body>
+
+</html>
